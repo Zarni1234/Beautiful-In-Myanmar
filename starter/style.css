@@ -1,0 +1,121 @@
+/*------- All in one ------ */
+
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Vidaloka", serif;
+  scroll-behavior: smooth;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+/*------ Home Content  section 1-------*/
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../resources/myanmar.jpg);
+  background-size: cover;
+  padding: 0 200px;
+  position: relative;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.home::after {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  background: #dad299; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #b0dab9,
+    #dad299
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #b0dab9,
+    #dad299
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.sub-home {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  top: 150px;
+}
+
+.home-heading {
+  color: #fff;
+}
+
+.home-para {
+  color: #fff;
+}
+
+/*-------- Scroll Arrorw------- */
+
+.scroll {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  background-color: #d5d5d5d5;
+  border-radius: 50%;
+}
+
+.scroll:hover,
+.scroll:active {
+  background-color: #000;
+}
+
+.up-icon:hover,
+.up-icon:active {
+  color: #fff;
+}
+
+.up-icon {
+  width: 15px;
+  vertical-align: center;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  font-size: 20px;
+}
+
+/* Section 2 */
+
+.girl {
+  width: 100%;
+  height: 100vh;
+  background-color: #c2c1c1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.honey {
+  width: 200px;
+}
+.girl-content {
+  width: 300px;
+  height: 200px;
+  padding: 0 30px;
+  color: #fff;
+  /* background-color: #fff; */
+}
